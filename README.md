@@ -71,7 +71,7 @@ Check if COP UI is up and running at http://localhost:8900/
 
 **NB!** the userid is admin@monica-cop.com and the password SOUND2020!
 
-![COP UI](https://github.com/MONICA-Project/DockerSoundDemo/blob/master/img/CNet%20Cop.PNG "COP UI") 
+![COP UI](https://github.com/MONICA-Project/DockerSoundDemo/blob/master/img/cop-ui.png "COP UI") 
 
 #### 5, Complete the start by bringing up the rest of the components
 You should see movements in stound graphs when it started
