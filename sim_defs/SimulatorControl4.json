@@ -1,0 +1,41 @@
+{
+  "simulation": [
+
+    {
+      "name": "WT 129",
+      "simulationFile": "WT 129.db",
+      "thing": {
+        "name": "SoundHeatMap/shm-summer",
+        "description": "SoundHeatMapSumming"
+      },
+      "observedProperties": {
+        "name": "SoundHeatMapSum/LCeq",
+        "description": "Sound Heat Map with C-weighted values.",
+        "definition": "http://mmisw.org/ont/ioos/parameter/SoundHeatMapSum/LCeq"
+      },
+      "sensor": {
+        "name": "SoundHeatMapSum/LCeq",
+        "description": "Sound Heat Map with C-weighted values.",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/SoundHeatMapSum/LCeq"
+      },
+      "datastream": {
+        "name": "SoundHeatMap/shm-summer:SoundHeatMapSum/LCeq",
+        "description": "SoundHeatMap/shm-summer:SoundHeatMapSum/LCeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "SoundHeatMapSum/LCeq",
+          "symbol": "Sound Heat Map with C-weighted values."
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    }
+  ]
+}

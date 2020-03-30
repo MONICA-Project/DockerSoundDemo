@@ -1,0 +1,586 @@
+{
+  "simulation": [
+    
+    {
+      "name": "WT 15634",
+      "simulationFile": "WT 15634.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0010_100090_Id1_LAeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0010_100090_Id1_LAeq"
+      },
+      "sensor": {
+        "name": "MONICA0010_100090_Id1_LAeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0010_100090_Id1_LAeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0010_100090_Id1_LAeq",
+        "description": "DSS:MONICA0010_100090_Id1_LAeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0010_100090_Id1_LAeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15635",
+      "simulationFile": "WT 15635.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0010_100090_Id1_LCeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0010_100090_Id1_LCeq"
+      },
+      "sensor": {
+        "name": "MONICA0010_100090_Id1_LCeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0010_100090_Id1_LCeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0010_100090_Id1_LCeq",
+        "description": "DSS:MONICA0010_100090_Id1_LCeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0010_100090_Id1_LCeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15636",
+      "simulationFile": "WT 15636.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0010_100090_Id1_CPBLZeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0010_100090_Id1_CPBLZeq"
+      },
+      "sensor": {
+        "name": "MONICA0010_100090_Id1_CPBLZeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0010_100090_Id1_CPBLZeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0010_100090_Id1_CPBLZeq",
+        "description": "DSS:MONICA0010_100090_Id1_CPBLZeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0010_100090_Id1_CPBLZeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15637",
+      "simulationFile": "WT 15637.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0008_100091_Id2_LAeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0008_100091_Id2_LAeq"
+      },
+      "sensor": {
+        "name": "MONICA0008_100091_Id2_LAeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0008_100091_Id2_LAeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0008_100091_Id2_LAeq",
+        "description": "DSS:MONICA0008_100091_Id2_LAeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0008_100091_Id2_LAeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15638",
+      "simulationFile": "WT 15638.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0008_100091_Id2_LCeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0008_100091_Id2_LCeq"
+      },
+      "sensor": {
+        "name": "MONICA0008_100091_Id2_LCeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0008_100091_Id2_LCeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0008_100091_Id2_LCeq",
+        "description": "DSS:MONICA0008_100091_Id2_LCeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0008_100091_Id2_LCeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15639",
+      "simulationFile": "WT 15639.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0008_100091_Id2_CPBLZeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0008_100091_Id2_CPBLZeq"
+      },
+      "sensor": {
+        "name": "MONICA0008_100091_Id2_CPBLZeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0008_100091_Id2_CPBLZeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0008_100091_Id2_CPBLZeq",
+        "description": "DSS:MONICA0008_100091_Id2_CPBLZeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0008_100091_Id2_CPBLZeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15640",
+      "simulationFile": "WT 15640.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0007_100092_Id3_LAeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0007_100092_Id3_LAeq"
+      },
+      "sensor": {
+        "name": "MONICA0007_100092_Id3_LAeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0007_100092_Id3_LAeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0007_100092_Id3_LAeq",
+        "description": "DSS:MONICA0007_100092_Id3_LAeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0007_100092_Id3_LAeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15641",
+      "simulationFile": "WT 15641.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0007_100092_Id3_LCeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0007_100092_Id3_LCeq"
+      },
+      "sensor": {
+        "name": "MONICA0007_100092_Id3_LCeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0007_100092_Id3_LCeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0007_100092_Id3_LCeq",
+        "description": "DSS:MONICA0007_100092_Id3_LCeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0007_100092_Id3_LCeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15642",
+      "simulationFile": "WT 15642.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0007_100092_Id3_CPBLZeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0007_100092_Id3_CPBLZeq"
+      },
+      "sensor": {
+        "name": "MONICA0007_100092_Id3_CPBLZeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0007_100092_Id3_CPBLZeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0007_100092_Id3_CPBLZeq",
+        "description": "DSS:MONICA0007_100092_Id3_CPBLZeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0007_100092_Id3_CPBLZeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15643",
+      "simulationFile": "WT 15643.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0001_000526_Id4_LAeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0001_000526_Id4_LAeq"
+      },
+      "sensor": {
+        "name": "MONICA0001_000526_Id4_LAeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0001_000526_Id4_LAeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0001_000526_Id4_LAeq",
+        "description": "DSS:MONICA0001_000526_Id4_LAeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0001_000526_Id4_LAeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15644",
+      "simulationFile": "WT 15644.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "@iot.selfLink": "http://monappdwp3.monica-cloud.eu:5050/gost_woodstower/v1.0/ObservedProperties(65)",
+        "name": "MONICA0001_000526_Id4_LCeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0001_000526_Id4_LCeq"
+      },
+      "sensor": {
+        "name": "MONICA0001_000526_Id4_LCeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0001_000526_Id4_LCeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0001_000526_Id4_LCeq",
+        "description": "DSS:MONICA0001_000526_Id4_LCeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0001_000526_Id4_LCeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15645",
+      "simulationFile": "WT 15645.db",
+      "thing": {
+        "@iot.selfLink": "http://monappdwp3.monica-cloud.eu:5050/gost_woodstower/v1.0/Things(19)",
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0001_000526_Id4_CPBLZeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0001_000526_Id4_CPBLZeq"
+      },
+      "sensor": {
+        "name": "MONICA0001_000526_Id4_CPBLZeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0001_000526_Id4_CPBLZeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0001_000526_Id4_CPBLZeq",
+        "description": "DSS:MONICA0001_000526_Id4_CPBLZeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0001_000526_Id4_CPBLZeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15646",
+      "simulationFile": "WT 15646.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0002_000504_Id5_LAeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0002_000504_Id5_LAeq"
+      },
+      "sensor": {
+        "name": "MONICA0002_000504_Id5_LAeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0002_000504_Id5_LAeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0002_000504_Id5_LAeq",
+        "description": "DSS:MONICA0002_000504_Id5_LAeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0002_000504_Id5_LAeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15649",
+      "simulationFile": "WT 15649.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0004_000608_Id6_LAeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0004_000608_Id6_LAeq"
+      },
+      "sensor": {
+        "name": "MONICA0004_000608_Id6_LAeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0004_000608_Id6_LAeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0004_000608_Id6_LAeq",
+        "description": "DSS:MONICA0004_000608_Id6_LAeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0004_000608_Id6_LAeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT 15652",
+      "simulationFile": "WT 15652.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA0009_000415_Id7_LAeq",
+        "description": "n/a",
+        "definition": "http://mmisw.org/ont/ioos/parameter/MONICA0009_000415_Id7_LAeq"
+      },
+      "sensor": {
+        "name": "MONICA0004_000608_Id7_LAeq",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA0004_000608_Id6_LAeq"
+      },
+      "datastream": {
+        "name": "DSS:MONICA0009_000415_Id7_LAeq",
+        "description": "DSS:MONICA0009_000415_Id7_LAeq",
+        "unitOfMeasurement": {
+          "definition": "http://unitsofmeasure.org/ucum.html#para-30",
+          "name": "MONICA0009_000415_Id7_LAeq",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    },
+    {
+      "name": "WT incidents",
+      "simulationFile": "WT incidents.db",
+      "thing": {
+        "name": "DSS",
+        "description": "DSS Service"
+      },
+      "observedProperties": {
+        "name": "MONICA:SOUND:INCIDENTS",
+        "description": "n/a",
+        "definition": "n/a"
+      },
+      "sensor": {
+        "name": "MONICA:SOUND:INCIDENTS",
+        "description": "n/a",
+        "encodingType": "application/pdf",
+        "metadata": "https://en.wikipedia.org/wiki/MONICA:SOUND:INCIDENTS"
+      },
+      "datastream": {
+        "name": "DSS:SOUND:INCIDENTS",
+        "description": "DSS:SOUND:INCIDENTS",
+        "unitOfMeasurement": {
+          "definition": "http://monica/incidents",
+          "name": "MONICA:SOUND:INCIDENTS",
+          "symbol": "n/a"
+        },
+        "observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation",
+        "observedArea": {
+          "coordinates": [
+            0,
+            0
+          ],
+          "type": "Point"
+        }
+      }
+    }
+
+  ]
+
+}
+

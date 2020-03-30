@@ -1,0 +1,217 @@
+version: '2.3'
+
+services:
+
+  mosquitto:
+    image: "eclipse-mosquitto"
+    ports:
+      - 1883:1883
+    volumes:
+      - "./mosquitto.conf:/mosquitto/config/mosquitto.conf"
+
+  gost-db:
+    image: "geodan/gost-db"
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=gost
+
+  gost:
+    image: geodan/gost
+    depends_on:
+      - gost-db
+      - mosquitto
+    environment:
+      GOST_DB_HOST: gost-db
+      GOST_SERVER_EXTERNAL_URI: http://localhost:8090/
+      GOST_MQTT_HOST: mosquitto
+      GOST_MQTT_PORT: 1883
+      GOST_MQTT_CLIENTID: gost
+      GOST_MQTT_PREFIX: GOST
+      GOST_SERVER_MAX_ENTITIES: 1000
+      GOST_LOG_VERBOSE_FLAG: "true"
+      GOST_MQTT_VERBOSE: "true"
+
+  simulatorSLM:
+    image: monicaproject/runsimulation:1.0
+    depends_on:
+      - gost-dashboard
+      - mosquitto
+    volumes:
+      - "./sim_defs/SimulatorControl2.json:/app/SimulatorControl.json"
+      - "./db:/db"
+    environment:
+      MQTTServerAddress: mosquitto
+      GOST: http://gost-dashboard:8080/v1.0/
+      DatabasePath: "/db/"
+      SettingsFile: /app/SimulatorControl.json
+
+  simulatorSHM:
+    image: monicaproject/runsimulation:1.0
+    depends_on:
+      - gost-dashboard
+      - mosquitto
+    volumes:
+      - "./sim_defs/SimulatorControl4.json:/app/SimulatorControl.json"
+      - "./db:/db"
+    environment:
+      MQTTServerAddress: mosquitto
+      GOST: http://gost-dashboard:8080/v1.0/
+      DatabasePath: "/db/"
+      SettingsFile: /app/SimulatorControl.json
+
+  simulatorDSS:
+    image: monicaproject/runsimulation:1.0
+    depends_on:
+      - gost-dashboard
+      - mosquitto
+    volumes:
+      - "./sim_defs/SimulatorControl3.json:/app/SimulatorControl.json"
+      - "./db:/db"
+    environment:
+      MQTTServerAddress: mosquitto
+      GOST: http://gost-dashboard:8080/v1.0/
+      DatabasePath: "/db/"
+      SettingsFile: /app/SimulatorControl.json
+      
+  gost-dashboard:
+    image: geodan/gost-dashboard
+    ports:
+      - "8090:8080"
+    depends_on:
+      - gost
+  copdb:
+    image: monicaproject/example-databases:SoundCOPDB
+    ports:
+      - "9996:5432"
+  copapi:
+    image: "monicaproject/copapi:0.3"
+    ports:
+      - "8800:80"
+    depends_on:
+      - mosquitto
+      - gost
+      - copdb
+    environment:
+      - MEDIA_PATH=wwwroot/ora_shared/
+      - CONNECTION_STR=Host=copdb;Database=monica_wt2019;Username=postgres;Password=postgres;Port=5432
+      - GOST_PREFIX=GOST
+      - TEST_TOKEN=6ffdcacb-c485-499c-bce9-23f76d06aa36
+      - USE_GOSTOBS=true
+      - GOST_SERVER=http://gost:8080/v1.0/
+      - URL_PREFIX=
+      - ASPNETCORE_ENVIRONMENT=Development
+      - USE_GOSTSEARCHOBS=true
+  copupdaterSLM:
+    image: "monicaproject/copupdater:0.6"
+    depends_on:
+      - mosquitto
+      - gost
+      - copapi
+    environment:
+      - CONNECTION_STR=Host=copdb;Database=monica_wt2019;Username=postgres;Password=postgres;Port=5432
+      - GOST_PREFIX=GOST
+      - COP_AUTH_TOKEN=6ffdcacb-c485-499c-bce9-23f76d06aa36
+      - MONICA_THING_TYPE=Soundmeter
+      - COP_API_BASE_PATH_HUB=http://copapi/
+      - COP_API_BASE_PATH=http://copapi/
+      - gostServer=http://gost:8080/v1.0/
+      - mqttServer=mosquitto
+      - URL_PREFIX=
+      - ASPNETCORE_ENVIRONMENT=Development
+      - signalR=true
+      - aggregate=false
+      - MqttGostPrefix=GOST
+      - OGCSearch=true
+  copupdaterDSS:
+    image: "monicaproject/copupdater:0.6"
+    depends_on:
+      - mosquitto
+      - gost
+      - copapi
+    environment:
+      - CONNECTION_STR=Host=copdb;Database=monica_wt2019;Username=postgres;Password=postgres;Port=5432
+      - GOST_PREFIX=GOST
+      - COP_AUTH_TOKEN=6ffdcacb-c485-499c-bce9-23f76d06aa36
+      - MONICA_THING_TYPE=SoundmeterAggregate
+      - COP_API_BASE_PATH_HUB=http://copapi/
+      - COP_API_BASE_PATH=http://copapi/
+      - gostServer=http://gost:8080/v1.0/
+      - mqttServer=mosquitto
+      - URL_PREFIX=
+      - ASPNETCORE_ENVIRONMENT=Development
+      - signalR=true
+      - aggregate=false
+      - MqttGostPrefix=GOST
+      - OGCSearch=true
+      
+  copupdaterSHM:
+    image: "monicaproject/copupdater:0.7"
+    depends_on:
+      - mosquitto
+      - gost
+      - copapi
+    environment:
+      - CONNECTION_STR=Host=copdb;Database=monica_wt2019;Username=postgres;Password=postgres;Port=5432
+      - GOST_PREFIX=GOST
+      - COP_AUTH_TOKEN=6ffdcacb-c485-499c-bce9-23f76d06aa36
+      - MONICA_THING_TYPE=SoundHeatmap
+      - COP_API_BASE_PATH_HUB=http://copapi/
+      - COP_API_BASE_PATH=http://copapi/
+      - gostServer=http://gost:8080/v1.0/
+      - mqttServer=mosquitto
+      - URL_PREFIX=
+      - ASPNETCORE_ENVIRONMENT=Development
+      - signalR=true
+      - aggregate=false
+      - MqttGostPrefix=GOST
+      - OGCSearch=true
+
+  copupdaterSoundincident:
+    image: "monicaproject/copdbincidentupdater:test2"
+    depends_on:
+      - mosquitto
+      - gost
+      - copapi
+    environment:
+      - CONNECTION_STR=Host=copdb;Database=monica_wt2019;Username=postgres;Password=postgres;Port=5432
+      - OGCMQTTPrefix=GOST
+      - COP_AUTH_TOKEN=6ffdcacb-c485-499c-bce9-23f76d06aa36
+      - COP_API_BASE_PATH_HUB=http://copapi/
+      - COP_API_BASE_PATH=http://copapi/
+      - gostServer=http://gost:8080/v1.0/
+      - OGCServerBaseURL=http://gost:8080/v1.0/
+      - MqttServer=mosquitto
+      - mqttDebug=false
+      - ASPNETCORE_ENVIRONMENT=Development
+      - signalR=true
+      - INCIDENT_TYPE=SoundIncident
+      - IncidentType=SoundIncident
+      - MqttGostPrefix=GOST
+      - OGCServerUID=public
+      - OGCServerPwd=public
+      - GOSTQuery=$$filter=substringof(%27DSS:SOUND:INCIDENTS%27,name)
+  copui:
+    image: "monicaproject/monica-cop-examples:sound"
+    ports:
+      - "8900:8080"
+    depends_on:
+      - mosquitto
+      - gost
+      - copapi
+    environment:
+      - COP_AUTH_TOKEN=6ffdcacb-c485-499c-bce9-23f76d06aa36
+      - MONICA_THING_TYPE=wearables UWB
+      - COP_API_BASE_PATH_HUB=http://copapi/
+      - COP_API_BASE_PATH=http://copapi/
+      - GOST_SERVER=http://gost:8080/v1.0/
+      - mqttServer=mosquitto
+      - URL_PREFIX=
+      - ASPNETCORE_ENVIRONMENT=Development
+      - signalR=true
+  
+volumes:
+  pgdata:
+
