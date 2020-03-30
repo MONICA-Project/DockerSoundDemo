@@ -1,4 +1,4 @@
-# Sound Management Demo MONICA example
+# Sound Management Demo MONICA
 
 ## Overview
 
