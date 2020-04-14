@@ -110,7 +110,7 @@ The following table show the list of services with opened ports (inside subnet a
 
 ### Tutorials based on this demo
 The following tutorials use this demo as starting point:
-- [COP UI Tutorial for Sound](https://monica-project.github.io/sections/cop-ui-tutorial.html)
+- [COP UI Tutorial for Sound](https://monica-project.github.io/sections/cop-api-tutorial%20for%20sound.html)
 
 ## Affiliation
 ![MONICA](https://github.com/MONICA-Project/template/raw/master/monica.png)  
