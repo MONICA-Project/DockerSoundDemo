@@ -1,8 +1,8 @@
-# Sound Management Demo MONICA
+# Sound Monitoring Demo MONICA
 
 ## Overview
 
-This repository is a working docker compose example of whole MONICA toolchain, from data simulation to visualization. The overall use case for this is sound mangagement using Sound Level Meters and sound processing. Main components are the following:
+This repository is a working docker compose example of whole MONICA toolchain, from data simulation to visualization. The overall use case for this is sound monitoring using Sound Level Meters and sound processing. Main components are the following:
 - Common Operational Picture
     - [COP UI](https://github.com/MONICA-Project/COP-UI) - The generic MONICA COP user interface
     - [COP APi](https://github.com/MONICA-Project/COP.API) - The MONICA COP API
