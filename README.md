@@ -21,7 +21,7 @@ This repository is a working docker compose example of whole MONICA toolchain, f
 
 ### Installation and execution
 Clone or download and unzip this repository to a folder on your local computer. Open a command console window and change it to the newly created folder.
-The first time this system is started it is best to do it stepwise to identify any problems of already occupied network ports by following this order (Used nwtwork ports are found at the end): 
+The first time this system is started it is best to do it stepwise to identify any problems of already occupied network ports by following this order (Used network ports are found at the end): 
 
 #### 1, Start up a GOST server:
 
